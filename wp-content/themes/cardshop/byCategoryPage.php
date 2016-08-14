@@ -2,7 +2,7 @@
 <?php get_header();?>
 <div class="container">
 	<div class="row card-featured-wrapper">
-		<h2 class="text-center">Card Collection</h2>
+		<h2 class="text-center"><?php single_cat_title(); ?></h2>
 	</div>
 </div>
 <div class="container" id="card-block" style="margin-top: 73px;margin-bottom: 173px;">
@@ -25,7 +25,7 @@
 			
 		</div>	
 		<div class="col-md-3">
-			<a href="">
+			<a href="<?php bloginfo('url'); ?>/?cat=5">
 				<div class="panel panel-default cate-shrink" id="cat-02">
 					<div class="panel-body category-wrap">
 						<div class="cate-wrapper">
@@ -42,7 +42,7 @@
 			
 		</div>	
 		<div class="col-md-3">
-			<a href="http://localhost:444/cardshop/?cat=2">
+			<a href="<?php bloginfo('url'); ?>/?cat=2">
 				<div class="panel panel-default cate-shrink" id="cat-03">
 					<div class="panel-body category-wrap">
 						<div class="cate-wrapper">
@@ -59,7 +59,7 @@
 			
 		</div>	
 		<div class="col-md-3">
-			<a href="">
+			<a href="<?php bloginfo('url'); ?>/?cat=2">
 				<div class="panel panel-default cate-shrink" id="cat-04">
 					<div class="panel-body category-wrap">
 						<div class="cate-wrapper">

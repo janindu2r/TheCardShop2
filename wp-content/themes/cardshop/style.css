@@ -905,7 +905,7 @@ margin-top:20px;
 .navbar-brand{
   min-height: 120px;
   background-color: #0194d9;
-  margin-left: 25px;
+  margin-left: 25px !important;
 }
 
 .navbar-brand img{
@@ -1009,6 +1009,7 @@ footer ul{
   text-decoration: none;
   list-style: none;
   text-align: center;
+
 }
 
 
@@ -1017,11 +1018,13 @@ footer ul{
   text-decoration: none;
   list-style: none;
   text-align: center;
+  padding-top: 3px;
+  margin: 0;
 }
 
 .copyright{
   background: #131313;
-  height: 25px;
+  height: 30px;
 }
 
 .inner-circle-text .circle img{

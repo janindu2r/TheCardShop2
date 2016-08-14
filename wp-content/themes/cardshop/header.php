@@ -39,13 +39,13 @@
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
 				<?php wp_nav_menu();?>
-				<!-- <ul>
+				<ul>
 					<li><a class="active" href="#home">Home</a></li>
 					<li><a href="#news">News</a></li>
 					<li><a href="#contact">Contact</a></li>
 					<li><a href="#about">About</a></li>
 				</ul>
-				<ul>
+				<!--<ul>
 					<li><a class="active" href="#home">Home</a></li>
 					<li><a href="#news">News</a></li>
 					<li><a href="#contact">Contact</a></li>
