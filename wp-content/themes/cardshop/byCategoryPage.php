@@ -8,13 +8,13 @@
 <div class="container" id="card-block" style="margin-top: 73px;margin-bottom: 173px;">
 	<div class="row no-padding">
 		<div class="col-md-3">
-			<a href="">
+			<a href="<?php bloginfo('url'); ?>/?cat=1">
 				<div class="panel panel-default cate-shrink" id="cat-01">
 					<div class="panel-body category-wrap" >
 						<div class="cate-wrapper">
 							<div class="card-img-holder">
 								<img src="img/card-001-featured.png"/>
-								<h4 class="text-center">Birthday Card</h4>
+								<h4 class="text-center">ss Card</h4>
 
 							</div>
 						</div>
@@ -65,7 +65,7 @@
 						<div class="cate-wrapper">
 							<div class="card-img-holder">
 								<img src="img/card-004-featured.png"/>
-								<h4 class="text-center">Birthday Card</h4>
+								<h4 class="text-center">dd Card</h4>
 
 							</div>
 						</div>
