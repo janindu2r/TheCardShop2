@@ -38,13 +38,12 @@
 
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+
+				<a href="" class="btn btn-social-icon btn-facebook"><i class="fa fa-facebook"></i></a>
+				<a class="btn btn-social-icon btn-google-plus"><i class="fa fa-google-plus"></i></a>
+				<a class="btn btn-social-icon btn-twitter"><i class="fa fa-twitter"></i></a>
 				<?php wp_nav_menu();?>
-				<ul>
-					<li><a class="active" href="#home">Home</a></li>
-					<li><a href="#news">News</a></li>
-					<li><a href="#contact">Contact</a></li>
-					<li><a href="#about">About</a></li>
-				</ul>
+
 				<!--<ul>
 					<li><a class="active" href="#home">Home</a></li>
 					<li><a href="#news">News</a></li>

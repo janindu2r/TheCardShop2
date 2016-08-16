@@ -1,7 +1,7 @@
 <!-- search -->
 <div class="container card-search-block">
 	<div class="row">
-		 <form class="card-search" role="search" action="/search" method="GET" >
+		 <form class="card-search" role="search" action="search" method="GET" >
 			<div class="row">
 				<div class="col-lg-12 card-search-padding">
 					<div class="col-lg-4">
@@ -10,10 +10,9 @@
 					<div class="col-lg-4">
 						<div class="form-group">
 							<select name="type" class="form-control" id="sel1">
+                                <option value="">any</option>
 								<option value="birthday_cards">Birthday Cards</option>
-								<option value="fathersday">Fathers Day Cards</option>
-								<option>3</option>
-								<option>4</option>
+								<option value="fathers_day">Fathers Day Cards</option>
 							</select>
 						</div>
 					</div>
