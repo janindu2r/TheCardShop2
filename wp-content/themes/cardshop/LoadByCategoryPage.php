@@ -6,5 +6,5 @@
 		<h2 class="text-center"><?php single_cat_title();?></h2>
 	</div>
 </div>
-<?php endwhile; ?>
+<?php endwhile; wp_reset_query();?>
 <?php get_footer(); ?>

@@ -1,39 +1,30 @@
 <!-- search -->
 <div class="container card-search-block">
 	<div class="row">
-		<!-- <form class="card-search" role="search" action= method="GET">
+		 <form class="card-search" role="search" action="search" method="GET" >
 			<div class="row">
 				<div class="col-lg-12 card-search-padding">
-					<div class="col-lg-4">
-						<input type="text" class="form-control" aria-label="..." placeholder="Search Cards">
+					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+						<input type="text" name="search_text" class="form-control" aria-label="..." placeholder="Search Cards">
 					</div>
-					<div class="col-lg-4">
-						<div class="form-group">
-							<select class="form-control" id="sel1">
-								<option>1</option>
-								<option>2</option>
-								<option>3</option>
-								<option>4</option>
+					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+						<div class="">
+							<select name="type" class="form-control" id="sel1">
+                                <option value="">any</option>
+								<option value="birthday_cards">Birthday Cards</option>
+								<option value="fathers_day">Fathers Day Cards</option>
 							</select>
 						</div>
 					</div>
-					<div class="col-lg-4">
-						<button type="button" class="btn btn-primary btn-block"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> Search</button>
+					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+						<button  name="search_btn" type="submit" class="btn btn-primary btn-block">
+							<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+							Search
+						</button>
 					</div>
 				</div>
 			</div>
-		</form> -->
-		<form role="search" method="get" id="searchform" action="<?php echo home_url( '/' ); ?>">
-<input type="text" name="s" id="s" <?php if(is_search()) { ?>value="<?php the_search_query(); ?>" <?php } else { ?>value="Enter keywords &hellip;" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;"<?php } ?> /><br />
-	
-<?php $query_types = get_query_var('post_type'); ?>
-    
-<input type="checkbox" name="post_type[]" value="articles" <?php if (in_array('articles', $query_types)) { echo 'checked="checked"'; } ?> /><label>Articles</label>
-<input type="checkbox" name="post_type[]" value="post" <?php if (in_array('post', $query_types)) { echo 'checked="checked"'; } ?> /><label>Blog</label>
-<input type="checkbox" name="post_type[]" value="books" <?php if (in_array('books', $query_types)) { echo 'checked="checked"'; } ?> /><label>Books</label>
-<input type="checkbox" name="post_type[]" value="videos" <?php if (in_array('videos', $query_types)) { echo 'checked="checked"'; } ?> /><label>Videos</label>
-    
-<input type="submit" id="searchsubmit" value="Search" />
-</form>
+		 </form>
+
 	</div>
 </div>

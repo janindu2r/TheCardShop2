@@ -1,5 +1,5 @@
 /*
-Theme Name: Card Shop 
+Theme Name: Card_Shop 
 Theme URI: http://thecardshop.com
 Author: Janindu Ranawake
 Author URI: http://wordpress.org/
@@ -15,6 +15,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 
 /************************************************clearfix*******************************************/
+@import url('css/bootstrap.css');
 @import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
 @import 'https://fonts.googleapis.com/css?family=PT+Serif:400i';
 .clearfix:after {
@@ -36,6 +37,11 @@ body{
     font-family: 'PT Serif', serif;
 }
 
+h1, h2, h3, h4, h5, h6, 
+.h1, .h2, .h3, .h4, .h5, .h6{
+    font-weight: 600;
+}
+
 .wave-grid{
 	background-image: url(../img/wavegrid.png);
     background-repeat: repeat;
@@ -46,6 +52,28 @@ body{
   margin-left: 0;
   margin-right: 0;
 }
+
+.btn-social-icon.btn-lg{padding-left:61px}.btn-social-icon.btn-lg :first-child{line-height:45px;width:45px;font-size:1.8em}
+.btn-social-icon.btn-sm{padding-left:38px}.btn-social-icon.btn-sm :first-child{line-height:28px;width:28px;font-size:1.4em}
+.btn-social-icon.btn-xs{padding-left:30px}.btn-social-icon.btn-xs :first-child{line-height:20px;width:20px;font-size:1.2em}
+.btn-social-icon :first-child{border:none;text-align:center;width:100% !important}
+.btn-social-icon.btn-lg{height:45px;width:45px;padding-left:0;padding-right:0}
+.btn-social-icon.btn-sm{height:30px;width:30px;padding-left:0;padding-right:0}
+.btn-social-icon.btn-xs{height:22px;width:22px;padding-left:0;padding-right:0}
+
+.btn-facebook{color:#fff;background-color:#3b5998;border-color:rgba(0,0,0,0.2)}.btn-facebook:hover,.btn-facebook:focus,.btn-facebook:active,.btn-facebook.active,.open .dropdown-toggle.btn-facebook{color:#fff;background-color:#30487b;border-color:rgba(0,0,0,0.2)}
+.btn-facebook:active,.btn-facebook.active,.open .dropdown-toggle.btn-facebook{background-image:none}
+.btn-facebook.disabled,.btn-facebook[disabled],fieldset[disabled] .btn-facebook,.btn-facebook.disabled:hover,.btn-facebook[disabled]:hover,fieldset[disabled] .btn-facebook:hover,.btn-facebook.disabled:focus,.btn-facebook[disabled]:focus,fieldset[disabled] .btn-facebook:focus,.btn-facebook.disabled:active,.btn-facebook[disabled]:active,fieldset[disabled] .btn-facebook:active,.btn-facebook.disabled.active,.btn-facebook[disabled].active,fieldset[disabled] .btn-facebook.active{background-color:#3b5998;border-color:rgba(0,0,0,0.2)}
+
+
+.btn-google-plus{color:#fff;background-color:#dd4b39;border-color:rgba(0,0,0,0.2)}.btn-google-plus:hover,.btn-google-plus:focus,.btn-google-plus:active,.btn-google-plus.active,.open .dropdown-toggle.btn-google-plus{color:#fff;background-color:#ca3523;border-color:rgba(0,0,0,0.2)}
+.btn-google-plus:active,.btn-google-plus.active,.open .dropdown-toggle.btn-google-plus{background-image:none}
+.btn-google-plus.disabled,.btn-google-plus[disabled],fieldset[disabled] .btn-google-plus,.btn-google-plus.disabled:hover,.btn-google-plus[disabled]:hover,fieldset[disabled] .btn-google-plus:hover,.btn-google-plus.disabled:focus,.btn-google-plus[disabled]:focus,fieldset[disabled] .btn-google-plus:focus,.btn-google-plus.disabled:active,.btn-google-plus[disabled]:active,fieldset[disabled] .btn-google-plus:active,.btn-google-plus.disabled.active,.btn-google-plus[disabled].active,fieldset[disabled] .btn-google-plus.active{background-color:#dd4b39;border-color:rgba(0,0,0,0.2)}
+
+.btn-twitter{color:#fff;background-color:#55acee;border-color:rgba(0,0,0,0.2)}.btn-twitter:hover,.btn-twitter:focus,.btn-twitter:active,.btn-twitter.active,.open .dropdown-toggle.btn-twitter{color:#fff;background-color:#309aea;border-color:rgba(0,0,0,0.2)}
+.btn-twitter:active,.btn-twitter.active,.open .dropdown-toggle.btn-twitter{background-image:none}
+.btn-twitter.disabled,.btn-twitter[disabled],fieldset[disabled] .btn-twitter,.btn-twitter.disabled:hover,.btn-twitter[disabled]:hover,fieldset[disabled] .btn-twitter:hover,.btn-twitter.disabled:focus,.btn-twitter[disabled]:focus,fieldset[disabled] .btn-twitter:focus,.btn-twitter.disabled:active,.btn-twitter[disabled]:active,fieldset[disabled] .btn-twitter:active,.btn-twitter.disabled.active,.btn-twitter[disabled].active,fieldset[disabled] .btn-twitter.active{background-color:#55acee;border-color:rgba(0,0,0,0.2)}
+
 
 /*--------------Top Section--------------*/
 #navfix{
@@ -714,8 +742,6 @@ body{
 }
 
 .container {
-    padding-left: 0px;
-    padding-right: 0px;
     max-width: 100%;
 }
 
@@ -882,14 +908,14 @@ margin-top:20px;
 
 .navbar-collapse li a {
     display: block;
-    color: white;
+    color: #000;
     text-align: center;
-    padding: 14px 16px;
+    padding: 5px 16px;
     text-decoration: none;
 }
 
 .navbar-collapse li a:hover {
-    background-color: #111;
+    border-bottom: 2px solid #0194d9;
 }
 
 .navbar{
@@ -939,10 +965,17 @@ margin-top:20px;
 
 .card-search-padding{
   padding: 25px 50px;
+  display: flex;
 }
 
-.card-featured-wrapper{
+.card-featured-wrapper,
+.about-us{
   padding: 15px 10px;
+}
+
+.about-us p{
+    font-size: 20px;
+    color: #0884c0;
 }
 
 
@@ -967,7 +1000,11 @@ margin-top:20px;
   color: #fff;
   margin: 0 auto;
 }
-
+/*
+.card-img-holder .text-center{
+    padding: 10px
+}
+*/
 .card-img-holder img{
   height: 228px;
   width: 170px;
@@ -976,9 +1013,10 @@ margin-top:20px;
   padding-top: 13px;
 }
 
-.card-img-holder button{
+.card-img-holder a{
   display: block;
-  margin: 0 auto;
+  margin: 5px 20%;
+
 }
 
 .category-wrap{
@@ -988,6 +1026,7 @@ margin-top:20px;
 
 .two-tone{
   background: -webkit-linear-gradient(top, #fff, #fff 60%, #038bca 40%, #038bca);
+      min-height: 345px;
 }
 
 .cate-wrapper{
@@ -1037,22 +1076,22 @@ footer ul{
 /*categories*/
 
 #cat-01{
-    left: 210px;
-    -ms-transform: rotate(-7deg); /* IE 9 */
-    -webkit-transform: rotate(-7deg); /* Chrome, Safari, Opera */
-    transform: rotate(-7deg);
+    left: 180px;
+    -ms-transform: rotate(-13deg); /* IE 9 */
+    -webkit-transform: rotate(-13deg); /* Chrome, Safari, Opera */
+    transform: rotate(-13deg);
 }
 
 #cat-02{
-    left: 94px;
-    top:-76px;
-    -ms-transform: rotate(7deg); /* IE 9 */
-    -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
-    transform: rotate(7deg);
+    left: 69px;
+    top: -79px;
+    -ms-transform: rotate(10deg); /* IE 9 */
+    -webkit-transform: rotate(10deg); /* Chrome, Safari, Opera */
+    transform: rotate(10deg);
 }
 
 #cat-03{
-    right: 34px;
+    right: 14px;
     bottom: -76px;
     -ms-transform: rotate(6deg); /* IE 9 */
     -webkit-transform: rotate(6deg); /* Chrome, Safari, Opera */
@@ -1060,7 +1099,7 @@ footer ul{
 }
 
 #cat-04{
-    right: 175px;
+    right: 135px;
     top: -60px;
     -ms-transform: rotate(-7deg); /* IE 9 */
     -webkit-transform: rotate(-7deg); /* Chrome, Safari, Opera */
@@ -1068,7 +1107,7 @@ footer ul{
 }
 
 .cate-shrink{
-    margin: 25px;
+    /*margin: 10px;*/
     position: relative;
 }
 
@@ -1103,3 +1142,109 @@ footer ul{
     @media only screen and (min-width : 1200px) {
 
     }
+
+.mrl-5{
+    margin-left: 10px;
+}
+
+.pdl-15{
+  padding-left:15px; 
+}
+
+.testimonials{
+    padding:15px 0;
+}
+
+.testimonials .carousel-info img {
+    border: 2px solid #0194d9;
+    border-radius: 150px;
+    height: 75px;
+    padding: 3px;
+    width: 75px;
+}
+.testimonials .carousel-info {
+    overflow: hidden;
+}
+.testimonials .carousel-info img {
+    margin-right: 15px;
+}
+.testimonials .carousel-info span {
+    display: block;
+}
+.testimonials .testimonials-name {
+    color: #0194d9;
+    font-size: 24px;
+    margin: 7px 0 0;
+}
+.testimonials span.testimonials-post {
+    color: #000;
+    font-size: 20px;
+}
+
+.categories{
+  height: 140px;
+  padding: 5px;
+  background-color: #0194d9;
+}
+
+.menu-foooter-container ul{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+} 
+
+.menu-foooter-container ul li{
+  display: inline;
+  padding: 0 10px;
+}
+.menu-foooter-container ul li a{
+  color: #fff
+}
+
+.menu-foooter-container ul li a:hover{
+  text-decoration: underline;;
+}
+
+.sorry-message{
+  text-align: center;
+  color: #0194d9;
+  font-size: 20px;
+}
+
+.contacts-desc{
+  color: #0194d9;
+  font-size: 18px;
+}
+
+.contacts-wrapper{
+  margin: 20px 0;
+  display: inline-block;
+}
+
+.vrl{
+  border-right: 2px solid #0194d9;
+}
+
+.contact-form-row1{
+  margin-right: 5%;
+  margin-bottom: 25px;
+}
+
+.contacts-wrapper .form-control{
+  background-color: #dedede;
+  border-radius: 0;
+}
+
+.btn-primary {
+    color: #ffffff;
+    background-color: #4d0f10;
+    border-color: #4d0f10;
+    border-radius: 7px;
+}
+
+.btn-primary:hover {
+    color: #ffffff;
+    background-color: #691112;
+    border-color: #691112;
+}
