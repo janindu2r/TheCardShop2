@@ -28,7 +28,7 @@
         if ( $query -> have_posts() ) : while ($query -> have_posts()): $query -> the_post();
 
         ?>
-        <div class="col-md-3">
+        <div class="col-sm-12 col-md-3 col-lg-3">
 <!--            --><?php //if(get_post_type() == 'birthday_cards'){ echo 'Birthday';} ?>
 <!--            --><?php //if(get_post_type() == 'post'){ echo 'Post';} ?>
             <div class="panel panel-default">

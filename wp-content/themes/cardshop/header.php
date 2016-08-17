@@ -26,23 +26,27 @@
 	<nav id="navfix" class="navbar" role="navigation">
 		<div class="container">
 			<!-- Brand and toggle get grouped for better mobile display -->
-			<div class="navbar-header">
+			<div class="navbar-header" style="margin-right: 25px;">
+				<a class="navbar-brand" href="http://localhost:444/cardshop/"><img src="<?php bloginfo('template_url'); ?>img/logo.png"></a>
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 					<span class="sr-only">Toggle navigation</span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="http://localhost:444/cardshop/"><img src="<?php bloginfo('template_url'); ?>img/logo.png"></a>
 			</div>
-
-			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
-
-				<a href="" class="btn btn-social-icon btn-facebook"><i class="fa fa-facebook"></i></a>
+			<div style="height:10px;"></div>
+			<div class="navbar-right">
+				<a class="btn btn-social-icon btn-facebook"><i class="fa fa-facebook"></i></a>
 				<a class="btn btn-social-icon btn-google-plus"><i class="fa fa-google-plus"></i></a>
 				<a class="btn btn-social-icon btn-twitter"><i class="fa fa-twitter"></i></a>
-				<?php wp_nav_menu (array('theme_location' => 'primary-menu','menu_class' => 'nav'));?>
+			</div>
+			<div style="height:50px;"></div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse " style="margin-left:15px;" id="bs-example-navbar-collapse-1">
+
+				
+				<?php wp_nav_menu (array('theme_location' => 'primary-menu','menu_class' => 'collapse navbar-collapse'));?>
 
 				<!--<ul>
 					<li><a class="active" href="#home">Home</a></li>

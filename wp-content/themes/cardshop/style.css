@@ -742,8 +742,6 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .container {
-    padding-left: 0px;
-    padding-right: 0px;
     max-width: 100%;
 }
 
@@ -910,14 +908,14 @@ margin-top:20px;
 
 .navbar-collapse li a {
     display: block;
-    color: white;
+    color: #000;
     text-align: center;
-    padding: 14px 16px;
+    padding: 5px 16px;
     text-decoration: none;
 }
 
 .navbar-collapse li a:hover {
-    background-color: #111;
+    border-bottom: 2px solid #0194d9;
 }
 
 .navbar{
@@ -967,6 +965,7 @@ margin-top:20px;
 
 .card-search-padding{
   padding: 25px 50px;
+  display: flex;
 }
 
 .card-featured-wrapper,
@@ -1014,9 +1013,10 @@ margin-top:20px;
   padding-top: 13px;
 }
 
-.card-img-holder button{
+.card-img-holder a{
   display: block;
-  margin: 0 auto;
+  margin: 5px 20%;
+
 }
 
 .category-wrap{
@@ -1026,6 +1026,7 @@ margin-top:20px;
 
 .two-tone{
   background: -webkit-linear-gradient(top, #fff, #fff 60%, #038bca 40%, #038bca);
+      min-height: 345px;
 }
 
 .cate-wrapper{
@@ -1233,4 +1234,17 @@ footer ul{
 .contacts-wrapper .form-control{
   background-color: #dedede;
   border-radius: 0;
+}
+
+.btn-primary {
+    color: #ffffff;
+    background-color: #4d0f10;
+    border-color: #4d0f10;
+    border-radius: 7px;
+}
+
+.btn-primary:hover {
+    color: #ffffff;
+    background-color: #691112;
+    border-color: #691112;
 }

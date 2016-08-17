@@ -32,5 +32,6 @@
 		</div>
 	</div>
 	<?php endwhile; wp_reset_query(); ?>
+	<div style="height:20px;"></div>
 </div>
 <?php get_footer();?>
