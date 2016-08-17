@@ -8,10 +8,10 @@
 	<!-- <link rel="shortcut icon" href="/favicon.ico">  --> <!--absolute links -->
 
 	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
 
 	<!-- Optional theme -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> -->
 
 	<!-- CSS Styles -->
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" />
@@ -42,7 +42,7 @@
 				<a href="" class="btn btn-social-icon btn-facebook"><i class="fa fa-facebook"></i></a>
 				<a class="btn btn-social-icon btn-google-plus"><i class="fa fa-google-plus"></i></a>
 				<a class="btn btn-social-icon btn-twitter"><i class="fa fa-twitter"></i></a>
-				<?php wp_nav_menu();?>
+				<?php wp_nav_menu (array('theme_location' => 'primary-menu','menu_class' => 'nav'));?>
 
 				<!--<ul>
 					<li><a class="active" href="#home">Home</a></li>

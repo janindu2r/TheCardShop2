@@ -12,7 +12,7 @@
 
 <div class="container">
     <div class="row card-featured-wrapper">
-        <h2 class="text-center">Searching for: <?php echo $text; ?> <?php echo $type; ?></h2>
+        <h2 class="text-center">Searching for: <?php echo $text; ?> <?php echo 'in '.$type. ' category';?></h2>
     </div>
 </div>
 <div class="container" id="card-block">
@@ -25,13 +25,13 @@
             );
         $query = new WP_Query($args);
 
-        while ($query -> have_posts()): $query -> the_post();
+        if ( $query -> have_posts() ) : while ($query -> have_posts()): $query -> the_post();
 
         ?>
         <div class="col-md-3">
 <!--            --><?php //if(get_post_type() == 'birthday_cards'){ echo 'Birthday';} ?>
 <!--            --><?php //if(get_post_type() == 'post'){ echo 'Post';} ?>
-            <div class="panel panel-default card-ml-mr">
+            <div class="panel panel-default">
                 <div class="panel-body two-tone">
                     <div class="card-img-holder">
                         <?php the_post_thumbnail('full');?>
@@ -44,7 +44,9 @@
             </div>
         </div>
 
-    <?php endwhile; wp_reset_query(); ?>
+    <?php endwhile; else : ?>
+        <p class="sorry-message"><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+    <?php endif; ?>
 </div>
 </div>
 
