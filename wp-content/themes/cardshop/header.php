@@ -5,6 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title><?php bloginfo('title');?></title>
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 	<!-- <link rel="shortcut icon" href="/favicon.ico">  --> <!--absolute links -->
 
 	<!-- Latest compiled and minified CSS -->
@@ -16,6 +17,8 @@
 	<!-- CSS Styles -->
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" />
 	<link href='http://fonts.googleapis.com/css?family=Lato:100,400,700,900' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js" type="text/javascript"></script>
 
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
@@ -27,7 +30,7 @@
 		<div class="container">
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header" style="margin-right: 25px;">
-				<a class="navbar-brand" href="http://localhost:444/cardshop/"><img src="<?php bloginfo('template_url'); ?>img/logo.png"></a>
+				<a class="navbar-brand" href="<?php bloginfo('template_url'); ?>"><img src="<?php bloginfo('template_url'); ?>img/logo.png"></a>
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 					<span class="sr-only">Toggle navigation</span>
 					<span class="icon-bar"></span>
@@ -37,9 +40,9 @@
 			</div>
 			<div style="height:10px;"></div>
 			<div class="navbar-right">
-				<a class="btn btn-social-icon btn-facebook"><i class="fa fa-facebook"></i></a>
-				<a class="btn btn-social-icon btn-google-plus"><i class="fa fa-google-plus"></i></a>
-				<a class="btn btn-social-icon btn-twitter"><i class="fa fa-twitter"></i></a>
+				<a href="https://www.facebook.com/ChathWick/" class="btn btn-social-icon btn-facebook"><i class="fa fa-facebook"></i></a>
+				<!-- <a class="btn btn-social-icon btn-google-plus"><i class="fa fa-google-plus"></i></a>
+				<a class="btn btn-social-icon btn-twitter"><i class="fa fa-twitter"></i></a> -->
 			</div>
 			<div style="height:50px;"></div>
 			<!-- Collect the nav links, forms, and other content for toggling -->
